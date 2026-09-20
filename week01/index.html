@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Verify Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="verify-card">
+            <h2>Please enter your phone number to verify your login.</h2>
+            <p class="tip-text">You will receive a single use code to submit.</p>
+
+            <div class="phone-input-wrap">
+                <select id="countrySelect">
+                    <option value="+86">🇨🇳 +86</option>
+                    <option value="+1">🇺🇸 +1</option>
+                    <option value="+44">🇬🇧 +44</option>
+                </select>
+                <input type="tel" id="phoneInput" placeholder="190 3257 1692">
+            </div>
+
+            <div id="errorMsg" class="error-text hidden">
+                The verification phone number has been temporarily blocked. Please wait 12 hours and try again.
+            </div>
+
+            <div class="code-wrap hidden" id="codeArea">
+                <input type="text" id="codeInput" placeholder="Enter verification code">
+                <button id="submitBtn">Submit</button>
+            </div>
+            <button id="sendCodeBtn">Send Verification Code</button>
+
+            <p class="bottom-note">We won’t ever message you — other than for verification</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
