@@ -1,1 +1,110 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+body {
+    background-color: #000000;
+    color: #e2e8f0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.verify-card {
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+}
+h2 {
+    font-weight: normal;
+    font-size: 2.3rem;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    color: #cbd5e1;
+}
+.tip-text {
+    font-size: 2.1rem;
+    color: #94a3b8;
+    margin-bottom: 32px;
+}
+.phone-input-wrap {
+    display: flex;
+    border: 1px solid #333;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#countrySelect {
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 18px 14px;
+    font-size: 1.5rem;
+    outline: none;
+}
+#phoneInput {
+    flex:1;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 18px 20px;
+    font-size: 1.5rem;
+    outline: none;
+}
+.error-text {
+    color: #ff5555;
+    font-size: 2rem;
+    text-align: left;
+    margin:16px 0;
+    line-height: 1.4;
+}
+.hidden {
+    display: none !important;
+}
+#sendCodeBtn {
+    width:100%;
+    padding:16px;
+    margin-top: 12px;
+    background-color: #2563eb;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:1.3rem;
+    cursor: pointer;
+}
+#sendCodeBtn:disabled{
+    background-color:#334155;
+    cursor:not-allowed;
+}
+.code-wrap {
+    display:flex;
+    gap:10px;
+    margin-top:16px;
+}
+#codeInput{
+    flex:1;
+    padding:16px;
+    background:#111;
+    border:1px solid #333;
+    color:#fff;
+    border-radius:10px;
+    font-size:1.3rem;
+}
+#submitBtn{
+    padding:16px 24px;
+    background:#10b981;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:1.3rem;
+    cursor:pointer;
+}
+.bottom-note {
+    margin-top:30px;
+    font-size:1.8rem;
+    color:#94a3b8;
+}
